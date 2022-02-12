@@ -20,3 +20,18 @@ html, body{
 ::selection {
     background: $secondary;
 }
+
+button{
+    padding: 7px;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover{
+        filter: brightness(.8);
+    }
+    &:active{
+        filter: brightness(1.2);
+    }
+}

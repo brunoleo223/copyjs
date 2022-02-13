@@ -13,14 +13,20 @@
     padding-top: 2rem;
     height: 100vh;
     position: relative;
+
+    & > div{
+        position: fixed;
+        width: 265px;
+    }
     
     .codeskills{
-        width: 150px;
+        width: 100px;
     }
     
     .logo{
         width: 300px;
         margin-bottom: 50px;
+        
     }
     
     ol{

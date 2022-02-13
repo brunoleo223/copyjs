@@ -12,47 +12,111 @@
     <link rel="stylesheet" href="assets/css/application.min.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta exercitationem, rerum fugit dolorum sed reiciendis corrupti minima, aut, optio obcaecati suscipit? Unde ratione dolorum omnis corporis dicta, aperiam quasi quisquam.</p>
-    
-    <div class="window">
-        <div class="topbar">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <button>COPY SCRIPT</button>
+    <div class="container">
+        <div class="sidebar">
+            <img src="assets/img/logo.png" alt="" class="logo">
+            
+            <ol>
+                <li><a class="active" href="#">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+                <li><a href="">Check if input is of number type</a></li>
+            </ol>
+            <img src="assets/img/codeskills_logo.png" alt="" class="codeskills">
         </div>
-        <div class="body-content">
-            <code>
-                <div class="block">
-                    <span class="token comment">
-                        // Check if input is of number type<br><br>
-                        /*<br>
-                        * Input: Any Type<br>
-                        * Output: Boolean<br>
-                        */
-                    </span>
+        <div class="main">
+            <div class="item">
+                <div class="title">
+                    Check if input is of number type
                 </div>
-                <div class="block">
-                    <span class="token reserved-name">function</span> <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">input</span>){<br>
-                        <span class="token reserved-name b-1">return typeof</span> input <span class="token reserved-name">==</span> <span class="token string">'number'</span> <span class="token reserved-name">||</span><br>
-                        <span class="token custom-name b-3">input</span> <span class="token reserved-name">instanceof</span> <span class="token custom-name">Number</span>;<br>
-                    }
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <button>COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <code>
+                            <div class="block">
+                                <span class="token comment">
+                                    // Check if input is of number type<br><br>
+                                    /*<br>
+                                    * Input: Any Type<br>
+                                    * Output: Boolean<br>
+                                    */
+                                </span>
+                            </div>
+                            <div class="block">
+                                <span class="token reserved-name">function</span> <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">input</span>){<br>
+                                    <span class="token reserved-name b-1">return typeof</span> input <span class="token reserved-name">==</span> <span class="token string">'number'</span> <span class="token reserved-name">||</span><br>
+                                    <span class="token custom-name b-3">input</span> <span class="token reserved-name">instanceof</span> <span class="token custom-name">Number</span>;<br>
+                                }
+                            </div>
+                            <div class="block">
+                                <span class="token comment">
+                                    // Tests
+                                </span>
+                            </div>
+                            <div class="block">
+                                <span class="token custom-name">isOfNumberType</span>(<span class="token number">10</span>) <span class="token comment">//true</span><br> 
+                                <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
+                                <span class="token custom-name">isOfNumberType</span>(<span class="token reserved-name">new </span><span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
+                                <span class="token custom-name">isOfNumberType</span>(<span class="token string">"10"</span>) <span class="token comment">//false</span><br>
+                            </div>
+                        </code>
+                    </div>
                 </div>
-                <div class="block">
-                    <span class="token comment">
-                        // Tests
-                    </span>
+            </div>
+            <div class="item">
+                <div class="title">
+                    Check if input from a form<br> is of number type
                 </div>
-                <div class="block">
-                    <span class="token custom-name">isOfNumberType</span>(<span class="token number">10</span>) <span class="token comment">//true</span><br> 
-                    <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
-                    <span class="token custom-name">isOfNumberType</span>(<span class="token reserved-name">new </span><span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
-                    <span class="token custom-name">isOfNumberType</span>(<span class="token string">"10"</span>) <span class="token comment">//false</span><br>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <button>COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <code>
+                            <div class="block">
+                                <span class="token comment">
+                                    // Check if input from a form is of number type<br><br>
+                                    /*<br>
+                                    * Input: Any Type<br>
+                                    * Output: Boolean<br>
+                                    */
+                                </span>
+                            </div>
+                            <div class="block">
+                                <span class="token reserved-name">function</span> <span class="token custom-name">isOfNumberTypeFromForm</span>(<span class="token custom-name">input</span>){<br>
+                                    <span class="token reserved-name b-1">return <span class="token comment">!</span></span><span class="token reserved-name">isNaN</span>(<span class="token custom-name">input</span>);<br>
+                                }
+                            </div>
+                        </code>
+                    </div>
                 </div>
-            </code>
+                <div class="result">
+                    <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </body>

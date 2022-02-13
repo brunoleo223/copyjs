@@ -59,3 +59,21 @@ $border-color: #211b2d;
         padding: 20px;
     }
 }
+
+.result{
+    width: 100%;
+    iframe{
+        border: 0;
+        width: 100%;
+        border-radius: 7px;
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 28px;
+        background-image: url('../img/direct.png');
+        background-size: 100%;
+        margin: 20px auto;
+    }
+}

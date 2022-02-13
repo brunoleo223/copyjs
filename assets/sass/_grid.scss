@@ -1,0 +1,87 @@
+.container{
+    width: 100%;
+    max-width: 1400px;
+    padding: 0rem 1.2rem;
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+}
+
+.sidebar{
+    width: 300px;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height: 100vh;
+    position: relative;
+    
+    .codeskills{
+        width: 150px;
+    }
+    
+    .logo{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    
+    ol{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        height: 460px;
+        overflow-y: scroll;
+        margin-bottom: 70px;
+        
+        li{
+            // list-style-type: none;
+            font-size: 1.1rem;
+            margin-left: 1.2rem;;
+            a{
+                color: rgb(68, 68, 68);
+                text-decoration: none;
+                &:hover{
+                    color: rgb(128, 128, 128);
+                }
+                &.active{
+                    color: #fff;
+                }
+            }
+        }
+        
+        /* width */
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #090d1186;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $primary;
+        }
+    }
+}
+
+.main{
+    flex: 1;
+    padding: 2rem 0 2rem 4rem;
+    border-left: 1px solid rgba($primary, .2);
+    
+    .title{
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
+
+        span{
+            color: $primary;
+        }
+    }
+}

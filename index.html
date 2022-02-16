@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/application.min.css">
 </head>
 <body>
+    <!-- menu spy: https://codepen.io/pankucins/pen/RGGPxq -->
     <div class="container">
         <div class="sidebar">
             <div>
@@ -52,74 +53,59 @@
                         <button>COPY SCRIPT</button>
                     </div>
                     <div class="body-content">
-                        <code>
-                            <div class="block">
-                                <span class="token comment">
-                                    // Check if input is of number type<br><br>
-                                    /*<br>
-                                    * Input: Any Type<br>
-                                    * Output: Boolean<br>
-                                    */
-                                </span>
-                            </div>
-                            <div class="block">
-                                <span class="token reserved-name">function</span> <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">input</span>){<br>
-                                    <span class="token reserved-name b-1">return typeof</span> input <span class="token reserved-name">==</span> <span class="token string">'number'</span> <span class="token reserved-name">||</span><br>
-                                    <span class="token custom-name b-3">input</span> <span class="token reserved-name">instanceof</span> <span class="token custom-name">Number</span>;<br>
-                                }
-                            </div>
-                            <div class="block">
-                                <span class="token comment">
-                                    // Tests
-                                </span>
-                            </div>
-                            <div class="block">
-                                <span class="token custom-name">isOfNumberType</span>(<span class="token number">10</span>) <span class="token comment">//true</span><br> 
-                                <span class="token custom-name">isOfNumberType</span>(<span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
-                                <span class="token custom-name">isOfNumberType</span>(<span class="token reserved-name">new </span><span class="token custom-name">Number</span>(<span class="token number">10</span>)) <span class="token comment">//true</span><br>
-                                <span class="token custom-name">isOfNumberType</span>(<span class="token string">"10"</span>) <span class="token comment">//false</span><br>
-                            </div>
-                        </code>
+                        <pre><code class="language-javascript">// Check if input is of number type
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isOfNumberType(input){
+    return typeof input == 'number' ||
+    input instanceof Number;
+}
+
+// Tests
+isOfNumberType(10) //true
+isOfNumberType(Number(10)) //true
+isOfNumberType(new Number(10)) //true
+isOfNumberType("10") //false</code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="title">
-                    Check if input from a form<br> is of number type
-                </div>
-                <div class="window">
-                    <div class="topbar">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <button>COPY SCRIPT</button>
+                <div class="item">
+                    <div class="title">
+                        Check if input from a form<br> is of number type
                     </div>
-                    <div class="body-content">
-                        <code>
-                            <div class="block">
-                                <span class="token comment">
-                                    // Check if input from a form is of number type<br><br>
-                                    /*<br>
-                                    * Input: Any Type<br>
-                                    * Output: Boolean<br>
-                                    */
-                                </span>
-                            </div>
-                            <div class="block">
-                                <span class="token reserved-name">function</span> <span class="token custom-name">isOfNumberTypeFromForm</span>(<span class="token custom-name">input</span>){<br>
-                                    <span class="token reserved-name b-1">return <span class="token comment">!</span></span><span class="token reserved-name">isNaN</span>(<span class="token custom-name">input</span>);<br>
-                                }
-                            </div>
-                        </code>
+                    <div class="window">
+                        <div class="topbar">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>COPY SCRIPT</button>
+                        </div>
+                        <div class="body-content">
+                            <pre><code class="language-javascript">// Check if input from a form is of number type
+                                    
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isOfNumberTypeFromForm(input){
+    return !isNaN(input);
+}</code></pre>
+                        </div>
                     </div>
-                </div>
-                <div class="result">
-                    <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
+                    <div class="result">
+                        <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script src="assets/js/highlight.js"></script>
+    </body>
+    </html>

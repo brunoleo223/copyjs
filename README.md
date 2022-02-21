@@ -1,6 +1,8 @@
 # COPY.JS
-Important script to copy and paste
 
+![Copy-js Image](https://codeskills.com.br/copy-js/hero_copyjs.png)
+
+You can access the project here: https://brunoleo223.github.io/copyjs/
 
 # Steps
 
@@ -8,7 +10,8 @@ Important script to copy and paste
 - [x] Create UI
 - [x] Integrate with a service to highlight the code
 - [ ] Publish all inicial scritps 
-- [ ] Provide access link
+- [ ] Develop button and animation to copy
+- [x] Provide access link
 
 ### Phase 2
 - [ ] Convert projet to NEXT.js 

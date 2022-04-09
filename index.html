@@ -50,10 +50,10 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <button>COPY SCRIPT</button>
+                        <button onclick="copyDivToClipboard(1)">COPY SCRIPT</button>
                     </div>
                     <div class="body-content">
-                        <pre><code class="language-javascript">// Check if input is of number type
+                        <pre><code id="copy1" class="language-javascript">// Check if input is of number type
 
 /*
 * Input: Any Type
@@ -85,10 +85,10 @@ isOfNumberType("10") //false</code></pre>
                                 <li></li>
                                 <li></li>
                             </ul>
-                            <button>COPY SCRIPT</button>
+                            <button onclick="copyDivToClipboard(2)">COPY SCRIPT</button>
                         </div>
                         <div class="body-content">
-                            <pre><code class="language-javascript">// Check if input from a form is of number type
+                            <pre><code id="copy2" class="language-javascript">// Check if input from a form is of number type
                                     
 /*
 * Input: Any Type
@@ -109,5 +109,22 @@ function isOfNumberTypeFromForm(input){
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/js/highlight.js"></script>
+
+        <script>
+            function copyDivToClipboard(id) {
+                var range = document.createRange();
+                range.selectNode(document.getElementById(`copy${id}`));
+                window.getSelection().removeAllRanges(); // clear current selection
+                window.getSelection().addRange(range); // to select text
+                if(document.execCommand("copy")){
+                    window.getSelection().removeAllRanges();// to deselect
+                    console.log('foi')
+                } else {
+                    console.log('n foi')
+                }
+                
+            }
+        </script>
+
     </body>
     </html>

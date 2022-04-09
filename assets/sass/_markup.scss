@@ -3,3 +3,41 @@ $reserved-name: #ff9c32;
 $custom-name: #8ffcff;
 $string: #a9e3ab;
 $number: #f46290;
+
+code{
+    .block{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .b-1{
+        padding-left: 2rem;
+    }
+    .b-2{
+        padding-left: 3rem;
+    }
+    .b-3{
+        padding-left: 4rem;
+    }
+    .b-4{
+        padding-left: 6.3rem;
+    }
+    .token{
+        color: #fff;
+        
+        &.comment{
+            color: $comment;
+        }
+        &.reserved-name{
+            color: $reserved-name;
+        }
+        &.custom-name{
+            color: $custom-name;
+        }
+        &.string{
+            color: $string;
+        }
+        &.number{
+            color: $number;
+        }
+    }
+}

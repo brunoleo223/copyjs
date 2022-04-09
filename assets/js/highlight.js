@@ -22,7 +22,7 @@ function formatHighlight(el){
     code.each(function(){
         var string = this.innerHTML,
         parsed = string.replace(strReg1, '<span class="token string">"$1"</span>');
-        parsed = parsed.replace(strReg2, '<span class=\"token string\">"$1"</span>');
+        parsed = parsed.replace(strReg2, '<span class="token string">"$1"</span>');
         parsed = parsed.replace(specialReg, '<span class="token reserved-name">"$1"</span>');
         parsed = parsed.replace(specialJsGlobReg, '<span class="token custom-name">"$1"</span>');
         parsed = parsed.replace(specialJsReg, '<span class="token reserved-name">"$1"</span>');

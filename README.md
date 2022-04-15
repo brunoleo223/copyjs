@@ -10,12 +10,13 @@ You can access the project here: https://brunoleo223.github.io/copyjs/
 - [x] Create UI
 - [x] Integrate with a service to highlight the code
 - [ ] Publish all inicial scritps 
-- [ ] Develop button and animation to copy
+- [X] Develop button and animation to copy
 - [x] Provide access link
 
 ### Phase 2
 - [ ] Convert projet to NEXT.js 
 - [ ] Integrate Prismic.io as CMS for content
+- [ ] Indent code with https://github.com/beautify-web/js-beautify
 
 ### Phase 3
 - [ ] Privide CDN link

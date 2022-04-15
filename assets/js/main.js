@@ -21,3 +21,23 @@ function copyDivToClipboard(id) {
         console.log('n foi')
     }
 }
+
+function actions(id, action){
+    const el = document.getElementById(`code${id}`);
+    const window = el.getElementsByClassName('window')[0];
+    const body = document.querySelector('body');
+
+    console.log(action)
+
+    switch(action){
+        case 'fullscreen':
+            window.classList.add('fullscreen')
+            body.style.overflowY = "hidden";
+            break;
+
+        case 'minimize':
+            window.classList.remove('fullscreen')
+            body.style.overflowY = "initial";
+            break;
+    }
+}

@@ -45,12 +45,12 @@
                 <div class="title">
                     Check if input is of number type
                 </div>
-                <div class="window fullscreen">
+                <div class="window">
                     <div class="topbar">
                         <ul>
                             <li></li>
-                            <li></li>
-                            <li></li>
+                            <li onclick="actions(1, 'minimize')"></li>
+                            <li onclick="actions(1, 'fullscreen')"></li>
                         </ul>
                         <button onclick="copyDivToClipboard(1)">COPY SCRIPT</button>
                     </div>
@@ -88,8 +88,8 @@ isOfNumberType("10") //false
                     <div class="topbar">
                         <ul>
                             <li></li>
-                            <li></li>
-                            <li></li>
+                            <li onclick="actions(2, 'minimize')"></li>
+                            <li onclick="actions(2, 'fullscreen')"></li>
                         </ul>
                         <button onclick="copyDivToClipboard(2)">COPY SCRIPT</button>
                     </div>
@@ -103,7 +103,7 @@ isOfNumberType("10") //false
 */
 
 function isOfNumberTypeFromForm(input){
-return !isNaN(input);
+    return !isNaN(input);
 }
                             </code>
                         </pre>

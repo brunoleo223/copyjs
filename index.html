@@ -39,11 +39,13 @@
             </div>
         </div>
         <div class="main">
-            <div class="item">
+
+            <!-- // Check if input is of number type -->
+            <div class="item" id="code1">
                 <div class="title">
                     Check if input is of number type
                 </div>
-                <div class="window">
+                <div class="window fullscreen">
                     <div class="topbar">
                         <ul>
                             <li></li>
@@ -53,7 +55,8 @@
                         <button onclick="copyDivToClipboard(1)">COPY SCRIPT</button>
                     </div>
                     <div class="body-content">
-                        <pre><code id="copy1" class="language-javascript">// Check if input is of number type
+                        <pre>
+                            <code class="language-javascript">// Check if input is of number type
 
 /*
 * Input: Any Type
@@ -69,62 +72,52 @@ function isOfNumberType(input){
 isOfNumberType(10) //true
 isOfNumberType(Number(10)) //true
 isOfNumberType(new Number(10)) //true
-isOfNumberType("10") //false</code></pre>
-                        </div>
+isOfNumberType("10") //false
+                            </code>
+                        </pre>
                     </div>
                 </div>
+            </div>
 
-                <div class="item">
-                    <div class="title">
-                        Check if input from a form<br> is of number type
+            <!-- Check if input from a form is of number type -->
+            <div class="item" id="code2">
+                <div class="title">
+                    Check if input from a form<br> is of number type
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(2)">COPY SCRIPT</button>
                     </div>
-                    <div class="window">
-                        <div class="topbar">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <button onclick="copyDivToClipboard(2)">COPY SCRIPT</button>
-                        </div>
-                        <div class="body-content">
-                            <pre><code id="copy2" class="language-javascript">// Check if input from a form is of number type
-                                    
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input from a form is of number type
+                                
 /*
 * Input: Any Type
 * Output: Boolean
 */
 
 function isOfNumberTypeFromForm(input){
-    return !isNaN(input);
-}</code></pre>
-                        </div>
+return !isNaN(input);
+}
+                            </code>
+                        </pre>
                     </div>
-                    <div class="result">
-                        <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
-                    </div>
+                </div>
+                <div class="result">
+                    <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/highlight.js"></script>
-
-        <script>
-            function copyDivToClipboard(id) {
-                var range = document.createRange();
-                range.selectNode(document.getElementById(`copy${id}`));
-                window.getSelection().removeAllRanges(); // clear current selection
-                window.getSelection().addRange(range); // to select text
-                if(document.execCommand("copy")){
-                    window.getSelection().removeAllRanges();// to deselect
-                    console.log('foi')
-                } else {
-                    console.log('n foi')
-                }
-                
-            }
-        </script>
-
-    </body>
-    </html>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/highlight.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

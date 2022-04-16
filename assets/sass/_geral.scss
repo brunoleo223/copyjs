@@ -12,6 +12,11 @@ html, body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     letter-spacing: .4px;
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 30px;
 }
 
 img{

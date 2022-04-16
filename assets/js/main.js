@@ -16,7 +16,7 @@ function copyDivToClipboard(id) {
         setTimeout(() => {
             button.innerText = "COPIED!";
             button.classList.add('copy')
-        }, 1000)
+        }, 500)
     } else {
         console.log('n foi')
     }

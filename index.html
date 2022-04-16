@@ -19,28 +19,24 @@
                 <img src="assets/img/logo.png" alt="" class="logo">
                 
                 <ol>
-                    <li><a class="active" href="#">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
-                    <li><a href="">Check if input is of number type</a></li>
+                    <li><a class="active" href="#code1">Check if input is of number type</a></li>
+                    <li><a href="#code2">Check if input from a form is of number type</a></li>
+                    <li><a href="#code3">Check if input value contains a number</a></li>
+                    <li><a href="#code4">Check if input value is null or undefined</a></li>
+                    <li><a href="#code5">Check if input value is an null or empty string</a></li>
+                    <li><a href="#code6">Check if input value is falsy</a></li>
+                    <li><a href="#code7">Check if input is an Array</a></li>
+                    <li><a href="#code8">Check if input is an Empty object</a></li>
+                    <li><a href="#code9">Convert first character of each sentence to uppercase</a></li>
+                    <li><a href="#code10">Convert first character of each word to uppercase</a></li>
+                    <li><a href="#code11">Reverse a string</a></li>
                 </ol>
                 <img src="assets/img/codeskills_logo.png" alt="" class="codeskills">
             </div>
         </div>
         <div class="main">
 
-            <!-- // Check if input is of number type -->
+            <!-- Check if input is of number type -->
             <div class="item" id="code1">
                 <div class="title">
                     Check if input is of number type
@@ -113,6 +109,396 @@ function isOfNumberTypeFromForm(input){
                     <iframe src="examples/isOfNumberTypeFromForm.html" frameborder="0"></iframe>
                 </div>
             </div>
+
+            <!-- Check if input value contains a number -->
+            <div class="item" id="code3">
+                <div class="title">
+                    Check if input value contains a number
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(3, 'minimize')"></li>
+                            <li onclick="actions(3, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(3)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input value contains a number
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isNumber(input){
+    return isOfNumberType(input) ||
+       !isNaN(Number(input))
+}
+
+// Tests
+isNumber(10)                //true
+isNumber(Number(10))        //true
+isNumber(new Number(10))    //true
+isNumber("10")              //true
+isNumber("10COPY")          //false
+isNumber("10.01")           //true
+isNumber("10e+14")          //true
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check if input value is null or undefined -->
+            <div class="item" id="code4">
+                <div class="title">
+                    Check if input value is null or undefined
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(4, 'minimize')"></li>
+                            <li onclick="actions(4, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(4)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input value is null or undefined
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function usNullish(input){
+    return input == undefined;
+}
+
+// Tests
+usNullish(undefined)   //true
+usNullish(null)        //true
+usNullish(false)       //false
+usNullish("")          //false
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check if input value is an null or empty string -->
+            <div class="item" id="code5">
+                <div class="title">
+                    Check if input value is an null or empty string
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(5, 'minimize')"></li>
+                            <li onclick="actions(5, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(5)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input value is an null or empty string
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isEmptyString(input){
+    return input === null ||
+       input === "";
+}
+
+// Tests
+isEmptyString(undefined)   //false
+isEmptyString(null)        //true
+isEmptyString(" ")         //false
+isEmptyString("")          //true
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check if input value is falsy -->
+            <div class="item" id="code6">
+                <div class="title">
+                    Check if input value is falsy
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(6, 'minimize')"></li>
+                            <li onclick="actions(6, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(6)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input value is falsy
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isFalsy(input){
+    return !input;
+}
+
+// Tests
+isFalsy(undefined)   //true
+isFalsy(null)        //true
+isFalsy(" ")         //false
+isFalsy("")          //true
+isFalsy(false)       //true
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check if input is an Array -->
+            <div class="item" id="code7">
+                <div class="title">
+                    Check if input is an Array
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(7, 'minimize')"></li>
+                            <li onclick="actions(7, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(7)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input is an Array
+
+/*
+* Input: Any Type
+* Output: Boolean
+*/
+
+function isArray(input){
+    return Array.isArray(input);
+}
+
+// Tests
+isArray(null)       //false
+isArray([])         //true
+isArray([1, 2, 3])  //true
+isArray({})         //false
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check if input is an Empty object -->
+            <div class="item" id="code8">
+                <div class="title">
+                    Check if input is an Empty object
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(8, 'minimize')"></li>
+                            <li onclick="actions(8, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(8)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Check if input is an Empty object
+
+/*
+* Input: Object Type
+* Output: Boolean
+*/
+
+function isEmptyObject(input){
+    for(const key in input){
+        if(input.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+
+// Tests
+isEmptyObject(null)     //true
+isEmptyObject({})       //true
+isEmptyObject([])       //true
+isEmptyObject({x: 10})  //false
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert first character of each sentence to uppercase -->
+            <div class="item" id="code9">
+                <div class="title">
+                    Convert first character of each sentence to uppercase
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(9, 'minimize')"></li>
+                            <li onclick="actions(9, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(9)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Convert first character of each sentence to uppercase
+// Sentence Demiliter is new line of '.\s+'
+
+/*
+* Input: String Type
+* Output: String Type
+*/
+
+function sentenceCase(input){
+    return input?.toLowerCase().replace(/(^\w)|\.\s+(\w)/gm, 
+                                        s => s.toUpperCase());
+}
+
+// Tests
+sentenceCase("")                            //""
+sentenceCase("i am bored")                  //I am bored
+sentenceCase("i am bored. let's play")      //I am bored. Let's play
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert first character of each word to uppercase -->
+            <div class="item" id="code10">
+                <div class="title">
+                    Convert first character of each word to uppercase
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(10, 'minimize')"></li>
+                            <li onclick="actions(10, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(10)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Convert first character of each word to uppercase
+
+/*
+* Input: String Type
+* Output: String Type
+*/
+
+function properCase(input){
+    return input?.toLowerCase().replace(/^\w|\s\w/g, 
+                                        s => s.toUpperCase());
+}
+
+// Tests
+properCase("")               //""
+properCase("bruno leo")      //I am bored
+properCase("brUNO lEo")      //I am bored. Let's play
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reverse a string -->
+            <div class="item" id="code11">
+                <div class="title">
+                    Reverse a string
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(11, 'minimize')"></li>
+                            <li onclick="actions(11, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(11)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Reverse a string
+
+/*
+* Input: String Type
+* Output: String Type
+*/
+
+function reverseString(input){
+    return input?.split('').reverse().join('');
+}
+
+// Tests
+reverseString("")                  //""
+reverseString("Hello")             // olleH
+reverseString("Hello, World!")      // !dlroW ,olleH
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert a number from one base to another base -->
+            <div class="item" id="code12">
+                <div class="title">
+                    Convert a number from one base to another base
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(12, 'minimize')"></li>
+                            <li onclick="actions(12, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(12)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Convert a number from one base to another base
+
+/*
+* Input: String Type
+* Output: String Type
+*/
+
+function convertBase(input, base1, base2){
+    return parseInt(input, base1).toString(base2);
+}
+
+// Tests
+convertBase("15", 10, 2)    // "1111"
+convertBase("F076", 16, 8)  // "170166"
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>

@@ -1,3 +1,4 @@
+// Copy to clipboard
 function copyDivToClipboard(id) {
     const range = document.createRange();
     const el = document.getElementById(`code${id}`);
@@ -22,6 +23,7 @@ function copyDivToClipboard(id) {
     }
 }
 
+// Window Actions
 function actions(id, action){
     const el = document.getElementById(`code${id}`);
     const window = el.getElementsByClassName('window')[0];
@@ -41,3 +43,34 @@ function actions(id, action){
             break;
     }
 }
+
+
+
+
+// Menu Spy
+function scrollSpy(){
+    let item = document.querySelectorAll('.item');
+    let itens = {};
+    let i = 0;
+
+    Array.prototype.forEach.call(item, (e) => {
+        itens[e.id] = e.offsetTop;
+    })
+
+    for(i in itens){
+        if(itens[i] <= window.pageYOffset + 36){
+            document.querySelector('.active').classList.remove('active');
+            document.querySelector('a[href*=' + i + ']').classList.add('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', scrollSpy);
+
+
+// Highlight
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+    });
+});

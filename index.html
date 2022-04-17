@@ -113,7 +113,7 @@ function isOfNumberTypeFromForm(input){
             <!-- Check if input value contains a number -->
             <div class="item" id="code3">
                 <div class="title">
-                    Check if input value contains a number
+                    Check if input value <br>contains a number
                 </div>
                 <div class="window">
                     <div class="topbar">
@@ -155,7 +155,7 @@ isNumber("10e+14")          //true
             <!-- Check if input value is null or undefined -->
             <div class="item" id="code4">
                 <div class="title">
-                    Check if input value is null or undefined
+                    Check if input value is <br>null or undefined
                 </div>
                 <div class="window">
                     <div class="topbar">
@@ -193,7 +193,7 @@ usNullish("")          //false
             <!-- Check if input value is an null or empty string -->
             <div class="item" id="code5">
                 <div class="title">
-                    Check if input value is an null or empty string
+                    Check if input value is an <br>null or empty string
                 </div>
                 <div class="window">
                     <div class="topbar">
@@ -390,7 +390,7 @@ sentenceCase("i am bored. let's play")      //I am bored. Let's play
             <!-- Convert first character of each word to uppercase -->
             <div class="item" id="code10">
                 <div class="title">
-                    Convert first character of each word to uppercase
+                    Convert first character of <br>each word to uppercase
                 </div>
                 <div class="window">
                     <div class="topbar">
@@ -465,7 +465,7 @@ reverseString("Hello, World!")      // !dlroW ,olleH
             <!-- Convert a number from one base to another base -->
             <div class="item" id="code12">
                 <div class="title">
-                    Convert a number from one base to another base
+                    Convert a number from one <br>base to another base
                 </div>
                 <div class="window">
                     <div class="topbar">
@@ -492,6 +492,225 @@ function convertBase(input, base1, base2){
 // Tests
 convertBase("15", 10, 2)    // "1111"
 convertBase("F076", 16, 8)  // "170166"
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create and initialise array -->
+            <div class="item" id="code13">
+                <div class="title">
+                    Create and initialise array
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(13, 'minimize')"></li>
+                            <li onclick="actions(13, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(13)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Create and initialise array
+
+/*
+* Input: Length of Array (Number)
+* Input: Default Value (Any Type)
+* Output: Array
+*/
+
+function initialize(length, value){
+    return Array(length).fill(value)
+}
+
+// Tests
+initialize(5, 0)    // [0,0,0,0,0]
+initialize(0, 5)    // []
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty an array -->
+            <div class="item" id="code14">
+                <div class="title">
+                    Empty an array
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(14, 'minimize')"></li>
+                            <li onclick="actions(14, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(14)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Empty an array
+
+/*
+* Input: Array
+* Output: Array
+*/
+
+function empty(input){
+    input.length = 0;
+    return input;
+}
+
+// Tests
+empty([])             // []
+empty([1,2,3,4,5])    // []
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remove falsy values from an array -->
+            <div class="item" id="code15">
+                <div class="title">
+                    Remove falsy values from an array
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(15, 'minimize')"></li>
+                            <li onclick="actions(15, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(15)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Remove falsy values from an array
+
+/*
+* Input: Array
+* Output: Array
+*/
+
+function removeBlanks(input){
+    return input.filter(Boolean);
+}
+
+// Tests
+removeBlanks([])                         // []
+removeBlanks([1,2,false,4,undefined])    // [1,2,4]
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remove duplicates from array -->
+            <div class="item" id="code16">
+                <div class="title">
+                    Remove duplicates from array
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(16, 'minimize')"></li>
+                            <li onclick="actions(16, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(16)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Remove duplicates from array
+
+/*
+* Input: Array
+* Output: Array
+*/
+
+function removeDuplicates(input){
+    return [...new Set(input)];
+}
+
+// Tests
+removeDuplicates([])               // []
+removeDuplicates([1,2,1,3,2,4])    // [1,2,3,4]
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casting an array to array of numbers -->
+            <div class="item" id="code17">
+                <div class="title">
+                    Casting an array to array of numbers
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(17, 'minimize')"></li>
+                            <li onclick="actions(17, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(17)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Casting an array to array of numbers
+
+/*
+* Input: Array
+* Output: Array
+*/
+
+function castToNumbers(input){
+    return input.map(Number);
+}
+
+// Tests
+castToNumbers([])               // []
+castToNumbers(["1",2,false,"3a",undefined,])    // [1,2,0,Nan,Nan]
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Return a series of integers starting from 0 -->
+            <div class="item" id="code18">
+                <div class="title">
+                    Return a series of integers <br>starting from 0
+                </div>
+                <div class="window">
+                    <div class="topbar">
+                        <ul>
+                            <li></li>
+                            <li onclick="actions(18, 'minimize')"></li>
+                            <li onclick="actions(18, 'fullscreen')"></li>
+                        </ul>
+                        <button onclick="copyDivToClipboard(18)">COPY SCRIPT</button>
+                    </div>
+                    <div class="body-content">
+                        <pre>
+                            <code class="language-javascript">// Return a series of integers starting from 0
+
+/*
+* Input: Number (excluding NaN, Negative, Infinity, -Infinity)
+* Output: Array
+*/
+
+function series(limit){
+    return [...Array(limit).keys()];
+}
+
+// Tests
+series(0)   // []
+series(1)   // [0]
+series(10)  // [0,1,2,3,4,5,6,7,8,9]
                             </code>
                         </pre>
                     </div>

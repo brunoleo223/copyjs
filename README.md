@@ -13,7 +13,7 @@ You can access the project here: https://brunoleo223.github.io/copyjs/
 - [x] Sidebar menu spy
 - [x] Develop button and animation to copy
 - [x] Provide access link
-- [ ] Add examples
+- [X] Add examples
 
 ### Phase 2
 - [ ] Convert projet to NEXT.js 

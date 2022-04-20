@@ -58,7 +58,7 @@ function scrollSpy(){
     })
 
     for(i in itens){
-        if(itens[i] <= window.pageYOffset + 36){
+        if(itens[i] <= window.pageYOffset + 200){
             document.querySelector('.active').classList.remove('active');
             document.querySelector('a[href*=' + i + ']').classList.add('active');
         }

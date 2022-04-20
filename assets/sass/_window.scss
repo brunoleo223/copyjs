@@ -54,13 +54,38 @@ $border-color: #211b2d;
             }
         }
         
+        .test{
+            padding: 6px 10px;
+            border-radius: 7px;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            font-size: 13.3px;
+            border: 1px solid #ffffff;
+            opacity: .2;
+            margin-right: 10px;
+            transition: all .1s;
+
+            img{
+                width: 11px;
+            }
+
+            &:hover{
+                opacity: .6;
+            }
+        }
+        
         button{
             background: $secondary;
             color: #fff;
             transition: all .2s;
+            border: 1px solid $secondary;
             
             &.copy{
                 background: #00c851;
+                border-color: #00c851;
                 transition: all .2s;
             }
             
@@ -71,7 +96,7 @@ $border-color: #211b2d;
         border-left: 20px solid $border-color;
         padding: 20px;
     }
-
+    
     &.fullscreen{
         position: fixed;
         z-index: 999;
@@ -79,7 +104,7 @@ $border-color: #211b2d;
         height: 100%;
         top: 0;
         left: 0;
-
+        
         .body-content{
             height: calc(100% - 58px) !important;
             overflow-y: scroll;
